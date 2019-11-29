@@ -5,14 +5,18 @@ import {
   StyleSheet,
   Text,
   View,
+  StatusBar,
+
 } from 'react-native';
+import Login from './paginas/Login'
 
 
 export default class app extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.texto1}>Estabelecimento</Text>
+        <Login/>
+        <StatusBar backgroundColor="#b53d00" barStyle="light-content" />
       </View>
     )
   }
@@ -20,13 +24,13 @@ export default class app extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ff5722',
+    backgroundColor: '#f57c00',
     flex: 1,
     alignItems: 'center',
 
   },
   texto1: {
-    fontSize: 25,
+    fontSize: 30,
     textAlign: 'center',
     justifyContent: 'center',
     margin: 80,
