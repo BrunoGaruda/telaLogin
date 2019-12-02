@@ -19,7 +19,7 @@ export default class Login extends Component {
       <View style={styles.container}>
         <Logo/>
         <Formulário />
-        <View>
+        <View style={styles.textoCont}>
           <Text style={styles.texto1} >
             Caso não tenha conta, ou esqueceu a senha, clique   
             <Text style={styles.texto2}
@@ -40,23 +40,33 @@ const styles = StyleSheet.create({
     
 
   },
+
+  textoCont: {
+    flexGrow:1,
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    flexDirection: 'row',
+
+  },
   texto1: {
+    alignItems: 'flex-end',
     fontSize: 16,
     textAlign: 'center',
-    justifyContent: 'flex-end',
-    marginVertical: 15,
+    justifyContent: 'center',
+    //marginVertical: 15,
     color: '#ffffff',
-    paddingVertical: 40
+    //paddingVertical: 20
 
   },
   texto2: {
     fontSize: 16,
     textAlign: 'center',
     justifyContent: 'flex-end',
-    marginVertical: 20,
+    //marginVertical: 20,
     color: '#b52d15',
     fontWeight: 'bold',
-    paddingVertical: 40
+    //paddingVertical: 20
 
   }
 
